@@ -58,4 +58,4 @@ My findings:
 
 <img src=2020%5Fhashtag%5Fgraph.png />
 
-This graph was particularly interesting because we can see how coronavirus was initially the common word used to refer to the virus, with the large spike right around the start of quarentine. Then, over time, covid19 became a more popular name especially into the end of the year. In comparison, words like doctor and hospital were rarely mentioned in relation to coronavirus and covid19.
+This graph was particularly interesting because we can see how coronavirus was initially the common word used to refer to the virus, with the large spike right around the start of quarantine. Then, over time, covid19 became a more popular name especially into the end of the year. In comparison, words like doctor and hospital were rarely mentioned in relation to coronavirus and covid19.
