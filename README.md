@@ -14,4 +14,4 @@ $ run terminal code
 
 
 
-<img src=country_#coronavirus.png width=100% />
+<img src=country%5F%23coronavirus.png /> 
