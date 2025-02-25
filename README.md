@@ -40,3 +40,22 @@ I also looked at a second hashtag #코로나바이러스. First by country:
 And, by language:
 
 <img src=lang%5F%23코로나바이러스.png />
+
+
+**alternative_reduce.py**
+
+Finally, I created a script that took the input of various hashtags and output:
+
+1) There is one line per input hashtag.
+2) The x-axis is the day of the year.
+3) The y-axis is the number of tweets that use that hashtag during the year.
+
+During this I called necessary matplotlib functions to plot these line graphs. This function was helpful in analyzing the changing trends in the language used during the pandemic on social media.
+
+I plotted four differe hashtags. I wanted to look at the change of the name used to refer to the virus, so I plotted #coronavirus and #covid19. I also plotted #doctor and #hospital to see how these words matched up with the overall name of the virus.
+
+My findings: 
+
+<img src=2020%5Fhashtag%5Fgraph.png />
+
+This graph was particularly intersting because we can see how coronavirus was initially the common word used to refer to the virus, with the large spike right around the start of quarentine. Then, over time, covid19 became a more popular name especially into the end of the year. In comparison, words like doctor and hospital were rarely mentioned in relation to coronavirus and covid19.
