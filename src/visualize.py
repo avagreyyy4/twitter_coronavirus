@@ -12,6 +12,7 @@ args = parser.parse_args()
 import os
 import json
 from collections import Counter,defaultdict
+import matplotlib.pyplot as plt
 
 # open the input path
 with open(args.input_path) as f:
@@ -26,3 +27,24 @@ if args.percent:
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
 for k,v in items:
     print(k,':',v)
+
+# plot bar graphs
+items = items[0:10]
+items.reverse()
+
+x_axis = [item[0] for item in items]
+y_axis = [item[1] for item in items]
+x_axis2 = range(len(x_axis))
+
+plt.bar(x_axis2, y_axis)
+plt.xticks(x_axis2, x_axis)
+plt.ylabel("Count")
+
+if args.input_path == "reduced.country":
+    plt.xlabel("Countries (Top 10)")
+    plt.title("Number of Tweets Using Specified Hashtag in 2022 by Country")
+    plt.savefig('country' + args.key + '.png')
+elif args.input_path == "reduced.lang":
+    plt.xlabel("Languages (Top 10)")
+    plt.title("Number of Tweets Using Specified Hashtag in 2022 by Language")
+    plt.savefig('lang' + args.key + '.png')
